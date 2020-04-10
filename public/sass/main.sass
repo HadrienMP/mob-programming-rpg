@@ -1,0 +1,38 @@
+@import "compass"
+body
+  margin: 0
+  font-family: sans-serif
+
+a
+  text-decoration: none
+
+header
+  background: #333
+  color: white
+  & > *
+    display: inline-block
+    vertical-align: middle
+  h1
+    margin: 0 20px
+  ul
+    margin: 0
+    padding: 0
+    li
+      display: inline-block
+      list-style-type: none
+      a
+        color: white
+        padding: 20px
+        box-sizing: border-box
+        display: block
+        &.active
+          background: #005959
+        &:hover
+          background: #00aaaa
+
+#content
+  max-width: 800px
+  margin: auto
+  text-align: justify
+  h2
+    font-size: .8em

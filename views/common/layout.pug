@@ -1,0 +1,13 @@
+html
+    head
+        title #{title} - Mob RPG
+        link(href="/css/main.css" rel="stylesheet")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+    body
+        header
+            h1 Mob RPG
+            ul
+                li: a.active(href="/") Règles
+                li: a(href="/rolesheets") Fiches de rôle
+        section#content
+            block content

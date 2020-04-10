@@ -1,0 +1,61 @@
+/* line 2, ../sass/main.sass */
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* line 6, ../sass/main.sass */
+a {
+  text-decoration: none;
+}
+
+/* line 9, ../sass/main.sass */
+header {
+  background: #333;
+  color: white;
+}
+/* line 12, ../sass/main.sass */
+header > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 15, ../sass/main.sass */
+header h1 {
+  margin: 0 20px;
+}
+/* line 17, ../sass/main.sass */
+header ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 20, ../sass/main.sass */
+header ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+/* line 23, ../sass/main.sass */
+header ul li a {
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  display: block;
+}
+/* line 28, ../sass/main.sass */
+header ul li a.active {
+  background: #005959;
+}
+/* line 30, ../sass/main.sass */
+header ul li a:hover {
+  background: #00aaaa;
+}
+
+/* line 33, ../sass/main.sass */
+#content {
+  max-width: 800px;
+  margin: auto;
+  text-align: justify;
+}
+/* line 37, ../sass/main.sass */
+#content h2 {
+  font-size: 0.8em;
+}
