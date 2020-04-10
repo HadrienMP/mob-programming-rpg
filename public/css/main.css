@@ -43,19 +43,20 @@ header ul li a {
 /* line 28, ../sass/main.sass */
 header ul li a.active {
   background: #005959;
+  font-weight: bold;
 }
-/* line 30, ../sass/main.sass */
+/* line 31, ../sass/main.sass */
 header ul li a:hover {
   background: #00aaaa;
 }
 
-/* line 33, ../sass/main.sass */
+/* line 34, ../sass/main.sass */
 #content {
   max-width: 800px;
   margin: auto;
   text-align: justify;
 }
-/* line 37, ../sass/main.sass */
+/* line 38, ../sass/main.sass */
 #content h2 {
   font-size: 0.8em;
 }
