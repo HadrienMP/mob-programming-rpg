@@ -4,10 +4,11 @@ html
         link(href="/css/main.css" rel="stylesheet")
         meta(name="viewport" content="width=device-width, initial-scale=1")
     body
-        header
-            h1 Mob RPG
-            ul
-                li: a.active(href="/") Règles
-                li: a(href="/rolesheets") Fiches de rôle
+        nav
+            #nav-wrapper
+                h1 Mob RPG
+                ul
+                    li: a.active(href="/") Règles
+                    li: a(href="/rolesheets") Fiches de rôle
         section#content
             block content

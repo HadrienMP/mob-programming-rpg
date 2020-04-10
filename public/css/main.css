@@ -10,53 +10,62 @@ a {
 }
 
 /* line 9, ../sass/main.sass */
-header {
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background: #333;
   color: white;
 }
-/* line 12, ../sass/main.sass */
-header > * {
+/* line 17, ../sass/main.sass */
+nav #nav-wrapper {
+  max-width: 800px;
+  margin: auto;
+}
+/* line 21, ../sass/main.sass */
+nav #nav-wrapper > * {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 15, ../sass/main.sass */
-header h1 {
-  margin: 0 20px;
+/* line 24, ../sass/main.sass */
+nav #nav-wrapper h1 {
+  margin: 0 20px 0 0;
 }
-/* line 17, ../sass/main.sass */
-header ul {
+/* line 26, ../sass/main.sass */
+nav #nav-wrapper ul {
   margin: 0;
   padding: 0;
 }
-/* line 20, ../sass/main.sass */
-header ul li {
+/* line 29, ../sass/main.sass */
+nav #nav-wrapper ul li {
   display: inline-block;
   list-style-type: none;
 }
-/* line 23, ../sass/main.sass */
-header ul li a {
+/* line 32, ../sass/main.sass */
+nav #nav-wrapper ul li a {
   color: white;
   padding: 20px;
   box-sizing: border-box;
   display: block;
 }
-/* line 28, ../sass/main.sass */
-header ul li a.active {
+/* line 37, ../sass/main.sass */
+nav #nav-wrapper ul li a.active {
   background: #005959;
   font-weight: bold;
 }
-/* line 31, ../sass/main.sass */
-header ul li a:hover {
+/* line 40, ../sass/main.sass */
+nav #nav-wrapper ul li a:hover {
   background: #00aaaa;
 }
 
-/* line 34, ../sass/main.sass */
+/* line 43, ../sass/main.sass */
 #content {
   max-width: 800px;
-  margin: auto;
+  margin: 100px auto 60px;
   text-align: justify;
 }
-/* line 38, ../sass/main.sass */
+/* line 47, ../sass/main.sass */
 #content h2 {
   font-size: 0.8em;
 }

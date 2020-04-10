@@ -6,34 +6,43 @@ body
 a
   text-decoration: none
 
-header
+nav
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
   background: #333
   color: white
-  & > *
-    display: inline-block
-    vertical-align: middle
-  h1
-    margin: 0 20px
-  ul
-    margin: 0
-    padding: 0
-    li
+
+  #nav-wrapper
+    max-width: 800px
+    margin: auto
+
+    & > *
       display: inline-block
-      list-style-type: none
-      a
-        color: white
-        padding: 20px
-        box-sizing: border-box
-        display: block
-        &.active
-          background: #005959
-          font-weight: bold
-        &:hover
-          background: #00aaaa
+      vertical-align: middle
+    h1
+      margin: 0 20px 0 0
+    ul
+      margin: 0
+      padding: 0
+      li
+        display: inline-block
+        list-style-type: none
+        a
+          color: white
+          padding: 20px
+          box-sizing: border-box
+          display: block
+          &.active
+            background: #005959
+            font-weight: bold
+          &:hover
+            background: #00aaaa
 
 #content
   max-width: 800px
-  margin: auto
+  margin: 100px auto 60px
   text-align: justify
   h2
     font-size: .8em
