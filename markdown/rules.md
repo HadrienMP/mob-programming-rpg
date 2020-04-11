@@ -15,7 +15,7 @@ Mais ne négligez pas les règes de base: Gentillesse, Considération et Respect
 Rassemblez au moins 3 joueurs pour faire un mob, le nombre maximum est inconnu. Willem Larsen (le designer)
 a facilité ce jeu avec 15 joueurs.
 
-    NB: Aucune expérience du mob n'est nécessaire
+__Aucune expérience du mob n'est nécessaire__
 
 * Vérifiez qu'au moins une personne dans le mob connait les bases du TDD (développement guidé par les tests). C'est à dire sait faire avancer le code à travers les étapes, rouge, vert et refactor avec le minimum de code nécessaire.
 
