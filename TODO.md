@@ -1,0 +1,11 @@
+- Règles: __À relire__
+- Driver
+- Navigator
+- Mobber
+- Rear admiral
+- Sponsor
+- Researcher
+- The nose
+- Automationist
+- The archivist
+- The traffic cop
