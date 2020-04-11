@@ -1,0 +1,37 @@
+nav
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  background: #333
+  color: white
+
+  #nav-wrapper
+    max-width: 800px
+    margin: auto
+    padding: 0 20px
+    box-sizing: border-box
+
+    & > *
+      display: inline-block
+      vertical-align: middle
+    h1
+      margin: 0 20px 0 0
+      font-size: 1.2em
+
+    ul
+      margin: 0
+      padding: 0
+      li
+        display: inline-block
+        list-style-type: none
+        a
+          color: white
+          padding: 20px
+          box-sizing: border-box
+          display: block
+          &.active
+            background: #005959
+            font-weight: bold
+          &:hover
+            background: #00aaaa
