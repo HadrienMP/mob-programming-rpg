@@ -22,50 +22,52 @@ nav {
 nav #nav-wrapper {
   max-width: 800px;
   margin: auto;
+  padding: 0 20px;
 }
-/* line 21, ../sass/main.sass */
+/* line 22, ../sass/main.sass */
 nav #nav-wrapper > * {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 24, ../sass/main.sass */
+/* line 25, ../sass/main.sass */
 nav #nav-wrapper h1 {
   margin: 0 20px 0 0;
 }
-/* line 26, ../sass/main.sass */
+/* line 27, ../sass/main.sass */
 nav #nav-wrapper ul {
   margin: 0;
   padding: 0;
 }
-/* line 29, ../sass/main.sass */
+/* line 30, ../sass/main.sass */
 nav #nav-wrapper ul li {
   display: inline-block;
   list-style-type: none;
 }
-/* line 32, ../sass/main.sass */
+/* line 33, ../sass/main.sass */
 nav #nav-wrapper ul li a {
   color: white;
   padding: 20px;
   box-sizing: border-box;
   display: block;
 }
-/* line 37, ../sass/main.sass */
+/* line 38, ../sass/main.sass */
 nav #nav-wrapper ul li a.active {
   background: #005959;
   font-weight: bold;
 }
-/* line 40, ../sass/main.sass */
+/* line 41, ../sass/main.sass */
 nav #nav-wrapper ul li a:hover {
   background: #00aaaa;
 }
 
-/* line 43, ../sass/main.sass */
+/* line 44, ../sass/main.sass */
 #content {
   max-width: 800px;
-  margin: 100px auto 60px;
+  margin: 60px auto 40px;
   text-align: justify;
+  padding: 20px;
 }
-/* line 47, ../sass/main.sass */
+/* line 49, ../sass/main.sass */
 #content h2 {
   font-size: 0.8em;
 }
