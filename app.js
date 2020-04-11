@@ -1,8 +1,19 @@
 let express = require("express");
 let app = express();
 let http = require('http').createServer(app);
+let fs = require("fs");
+let markdown = require("jstransformer-markdown-it");
 
-app.get('/', (req, res) => res.render('index', {title: "Règles"}));
+function toHtml(fileName, callback) {
+    fs.readFile(fileName, "utf-8", (err, data) => {
+        if (!err) callback(markdown.render(data))
+    });
+}
+
+app.get('/', (req, res) => {
+    toHtml("markdown/rules.md",
+            html => res.render('index', {title: "Règles", rules: html}));
+});
 app.get('/rolesheets', (req, res) => res.render('rolesheets', {title: "Rôles"}));
 
 app.set('view engine', 'pug');
