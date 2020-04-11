@@ -2,92 +2,110 @@
 ## by Willem Larsen CC-BY-SA-NC 2016
 ## Powered by the Apocalypse - thanks to BigBadCon 2016 for inspiration
 
-# To the Game Master
+# Pour le maître du jeu
+Tout d'abord, merci d'aider à tester ce jeu !
 
-First of all, thanks for helping playtest this game!
+Votre premier devoir est que tout les joueurs se traitent avec Gentillesse, Considération et Respect.  
+ 
+Votre première partie sera étrange, suivez le mouvement ! 
+Mais ne négligez pas les règes de base: Gentillesse, Considération et Respect à tout moment.
 
-Your primary duty is that everyone playing treats each other with Kindness, Consideration and Respect.
+# Prérequis
 
-Your first time running this game will be awkward. Embrace it! But don’t budge on the fundamental rules - treating each other with Kindness, Consideration, and Respect at all times.
+Rassemblez au moins 3 joueurs pour faire un mob, le nombre maximum est inconnu. Willem Larsen (le designer)
+a facilité ce jeu avec 15 joueurs.
 
-# Game Requirements
+    NB: Aucune expérience du mob n'est nécessaire
 
-Gather at least three players to make a mob, upper limit unknown... You facilitate. I (the designer) have played with up to 15 players in the mob.
+* Vérifiez qu'au moins une personne dans le mob connait les bases du TDD (développement guidé par les tests). C'est à dire sait faire avancer le code à travers les étapes, rouge, vert et refactor avec le minimum de code nécessaire.
 
-    NOTE: No prior mobbing experience is necessary.
-* Verify that at least one person in this mob must have some minimum fluency in Test Driven Development; i.e., ability to move fluently through the Red, Green, Refactor stages with minimal code necessary.
-* Get a shared screen big enough for all players to see comfortably - you might consider using a projector. Large screen TVs work great.
-* Get one shared keyboard - consider having some hand sanitizer available to avoid sharing cooties.
-* Get one or two pairs of scissors and tape - scotch, masking, poster tape will all work.
-* Print out all 3 Level 1 rolesheets for each player in your game, and at least one set of Level 2 rolesheets.
+* Ayez une bonne connexion, la fibre si possible.
+* Jouez avec vos caméras allumées si possible, une grande partie de la communication se fait en non verbal.
+* Si vous avez des problèmes de performance, coupez les vidéos des participants.
+* Utilisez un outil en ligne comme Cyber Dojo ou préparez un répertoire git sur lequel tous les joueurs peuvent contribuer à l'avance.
+* Un système à double écran est idéal. Un écran peut servir pour le code, l'autre pour les fiches de rôle.
 
-# Before players sit down to play
+# Avant le début du jeu
 
-* Set up an IDE with a test file in a coding language that at least one person in your session will be fluent in.
-Create one test failing successfully in a test file in the coding language of choice.
-Decide on some way to time rotations for three roles - Driver, Navigator and Mobber.
+* Mettez en place un IDE avec un fichier de test dans un langage qu'au moins un des mobbers connait.
+* Codez un test qui ne passe pas.
+* Utilisez un chronomètre pour effectuer les rotations (Driver, Navigator, Mobber). Vous pouvez utiliser (https://mob-time-server.herokuapp.com/)[Mob Time], c'est un chronomètre partagé qui joue un son au hasard à la fin de chaque tour.
 
-* You will lead the rotation of Driver/Navigator positions every 3 minutes. The Driver moves to the right and becomes the new Navigator, the Navigator becomes a generic Mobber. Rotate consistently in a fixed order.
+* Changez de rôle toutes les 3 minutes.
+* Le driver devient le nouveau navigateur. Le navigateur devient un mobber.
+* Définissez à l'avance un ordre pour les rotations et respectez le.
 
-* Install and Use the Mob Timer to guide mob role rotations (optional).
+* L'exercice de code est le kata FizzBuzz. Il faut code un programme qui génère “1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, 16....” jusqu'à un nombre donné (par exemple 100).
 
-* Plan to solve the FizzBuzz kata - creating a solution that generates output matching the pattern of “1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, 16....” up to a given number.
-
+__TODO__
 * Create and label a Mob Squad zone, a mob badge parking lot, by setting aside a piece of blank wall or whiteboard that will be covered in mob badges that individuals players complete. This becomes the group’s achievement, the total number of rolesheets the members have completed.
 
-# Starting the game
+# Démarrage du jeu
 
-Read aloud:
+Lisez à voix haute:
 
-“Hello everyone. We are here to play Mob Programming: the Role-Playing Game. The first most important rule is this: that we treat each other with Kindness, Consideration, and Respect at all times. Can you help me with making sure we remember this when things get tough?... [wait for reply]... Mob Programming is a development practice used for raising code quality and removing obstacles. In practice it usually feels like a bulldozer rather than a racecar - unstoppable and thorough. That’s mobbing!
+"Bienvenue à tous. Vous êtes ici pour jouer au jeu de rôle du mob. La règle la plus importante et que nous devons nous traiter avec Gentillesse, Considération et Respect, à tout moment. Pouvez-vous m'aider à m'en rappeler quand ça deviendra compliqué ? Le mob est une pratique de développement utilisée pour augmenter la qualité de code et outrepasser les obstacles. En pratique, le mob ressemble plus à un bulldozer qu'à une voiture de course, il est inarrêtable, et méticuleux.  
 
-"A rolesheet is what we call the sheets with icons and descriptions of roles on them. Now, there are currently three levels of rolesheet and counting. We're only going to worry about level 1 right now. Depending on where you are in the rotation, you will be using the appropriate rolesheet.
+Nous allons tous commencer avec les fiches de rôle de niveau 1. Chaque fiche de rôle possède un badge. Si vous avez tous les points d'expérience d'un rôle vous faites gagner son badge au mob.
+* Si vous partagez votre écran, vous êtes au clavier, vous êtes donc le pilote (Driver).
+* Si vous êtes le navigateur (Navigator), vous donnez les instructions au pilote.
+* Sinon vous êtes un mobber
 
-"If you are at the keyboard, you are a driver and will be filling out the Driver rolesheet. If you are sitting to the right of the driver, you are the navigator and will be filling out the Navigator rolesheet. Otherwise you will be working on the Mobber rolesheet.
+Ce jeu a deux buts:
+1. Devenir un super mob en incarnant les rôles aussi précisément que possible.
+2. Construire votre mob en vous entraidant pour gagner autant de badges que possible dans cette session.
 
-“The goal of this game is twofold - the first is to become a great mob by ‘embodying” the role outlined in your rolesheet as accurately as possible. The second one is to ‘build your group mob’ by helping each other complete as many rolesheets you can in this session. If you do this with Kindness, Consideration, and Respect, congratulations! You may join the annals of the great mobs of history.”
+Si vous le faite avec Gentillesse, Considération et Respect, félicitations ! Vous pouvez rejoindre les annales des meilleurs mobs de l'histoire."
 
-# After each player has chosen a rolesheet:
+# Une fois les premiers pilotes et navigateurs sélectionnés
 
-“Now look at your rolesheets. You’ll note that there are specific actions you take that give you ‘XP’s, also known as “experience points”. It’s up to you to decide when you have taken one of those actions and then check the box. Every time you decide you have exhibited a behavior that gets you XP, announce what it is out loud to the group and check a box.”
+"Maintenant regardez vos fiches de rôle. Vous pouvez remarquer qu'il y a des actions qui font gagner des points d'expérience. À coté du nom du rôle vous trouverez des cases à cocher. À chaque fois que vous estimez avoir montré un comportement qui vous donne de l'expérience, annoncez le au mob et cochez une case d'éxpérience.
 
+Quand toutes les cases d'une fiche sont cochées, vous gagnez son badge.
+
+__TODO on fait quoi dans ce cas là ?__
 “When you check all the boxes you can switch rolesheets, but we’ll talk more about that once it happens.”
 
-Decide the order of rotation, have the players get in their positions as decided by the rotation order, Driver/Navigator/Mob.
-# Before you start the timer tell the players:
+# Avant de démarrer le premier tout
 
-“As you can tell by looking at your roles, the Driver’s job is to type what the Navigator instructs them to type. The Navigator’s job is to sift the ideas of the mob and instruct the Driver what to type.
+"Comme vous pouvez le voir sur les fiches de rôles, le travail du pilote est de taper ce que lui dit le navigateur. Le navigateur fait le tri dans les idées du mob et donne les instructions au pilote.
 
-"Now this game can get crazy and the coding challenge can make you forget that you have roles to complete. Therefore, the person directly to the right of the Navigator, your job is to help the Navigator remember to check boxes when they complete the XP behaviors. The person directly to the left of the Driver has the same job, to remind the Driver when they have completed a behavior and can check a box."
+Ce jeu peut devenir dingue et vous faire oublier vos rôles et les badges à gagner. La personne qui sera navigateur au tour suivant doit aider le navigateur à se souvenir de cocher les cases quand il montre les bons comportements.
 
-"Remember, our goal is to finish as many roles as possible in an hour and beat previous records (as of May 2018 the record is 39 badges in an hour). Any questions?”
+Rappelez vous que notre but est de gagner autant de badges que possible et de battre le record précédent (39 badges en mai 2018).
 
-Barring unanswerable questions, now start the 3 minute timer. Rotate positions when the timer goes off - Driver becomes Navigator, Navigator becomes mob member, and the next mob member becomes Driver.
+Posez moi 3 questions !"
 
-Once play has begun, please monitor the presence of Kindness, Consideration and Respect. If at any time you notice one of these qualities not being present, simply speak up and say to the mob, “Kindness please!” or “Consideration please!” or “Respect please”, depending on which is missing.
+Si on fait exception des questions auquelles ont ne sait pas répondre. Quand la musique signale la fin du tour, le navigateur devient le pilote, le pilote devient mobber et le prochain mobber devient navigateur. 
 
-Every rotation, stop the rotation and ask the players the following questions  (please take notes on their answers):
+Une fois le jeu démarré, surveillez la présence de la gentillesse, considération et respect. Si vous remarquez qu'une de ces caractéristiques n'est pas présente, prenez la parole et dites "Plus de Gentillesse s'il vous plait" ou "Plus de considération s'il vous plaît" ou "Plus de respect s'il vous plaît".
 
-“What stands out for you? What did you notice about the coding challenge, or the overall gameplay? Is there anything you're struggling with?”
+# À la fin de chaque tour
+Posez les questions suivantes :
+- Est-ce qu'il y a quelque chose qui ressort pour vous ?
+- Avez-vous remarqué quelque chose par rapport à l'exercice ou au gameplay ?
+- Il y a-t-il quelque chose qui vous donne du mal ?
 
-Don’t spend more than 5 minutes on this discussion. Make it brief and take notes, restart the timer and have another Q&A at the end of the next rotation. Rinse and repeat.
+Ne passez pas plus de 5 minutes sur cette discussion. Soyez brefs, prenez des notes.
 
-All roles except Driver and Navigator travel with the player. Driver and Navigator role sheets are pulled out and used, *and can score XP*, only when at those positions in rotation, not in the general mob. Keep any previous role sheet available to resume for when you are done with Driver/Navigator rotation (and therefore can no longer get XP for those roles until you rotate back into them).
+Vous pouvez gagner des points d'expérience sur tous les rôles à tout moment. Sauf pilote et navigateur. Vous ne pouvez marquer des points pour ceux-ci que quand vous êtes dans ce rôle.
 
-# When a player finishes a rolesheet
+# Quand un joueur a marqué tous les points d'un rôle
+Il gagne un badge. 
+__TODO on fait quoi en remote quand quelqu'un gagne un badge ?__
 
-Ask them to cut out the icon badge on the dotted line, put tape on the back and stick it up in the mob badge parking lot. This zone is the group Mob Squad and will fill up with the various badges as they finish rolesheets.
+Il peut garder la fiche du rôle, car il peut toujours gagner des points d'expérience en montrant des comportements de ce rôle.
 
-They can keep the rolesheet they have cut up - the moves can still net them XP, per the instructions on the rolesheet.
 
-# After 1 hour of rotations (or less depending on time available)
+# Après une heure de rotations
+Le jeu s'arrête. On compte les badges. Le nombre de badges est le score du jeu.
 
-Stop the game. Count badges and total. This is the mob’s score for the game.
-
-Have a more expansive discussion, 10-15 minutes. What was a high point for you? What was a low point you experienced? For any rolesheets you completed, what did you like? How would you play it differently next time?
+Démarrez une discussion de 10-15 minutes pour répondre aux questions suivantes :
+- Quel était le meilleur moment pour vous ?
+- Quel était le pire moment pour vous ?
+- Pour un badge que vous avez gagnés, qu'avez-vous aimé dans le rôle ?
+- Que ferez-vous différement à votre prochaine partie ?
 
 # FIN
 
-That’s it! That’s the game. Hope you had fun, get your notes to me, and try running it as often as you like.
-
-Thanks for playing - Sincerely, Willem Larsen
+Merci d'avoir joué avec nous ! J'espère que vous vous êtes amusés !
