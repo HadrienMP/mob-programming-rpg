@@ -70,3 +70,26 @@ nav #nav-wrapper ul li a:hover {
   padding: 20px;
   box-sizing: border-box;
 }
+
+/* line 18, ../sass/main.sass */
+.level {
+  display: inline-block;
+  margin-bottom: 20px;
+  width: 50%;
+}
+/* line 22, ../sass/main.sass */
+.level h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 500px) {
+  /* line 22, ../sass/main.sass */
+  .level h2 {
+    font-size: 1.2em;
+  }
+}
+/* line 27, ../sass/main.sass */
+.level .badge {
+  width: 30%;
+  margin-right: 3%;
+}
