@@ -1,15 +1,15 @@
-const server = require("./server");
-const fs = require("fs");
-const markdown = require("jstransformer-markdown-it");
+const express = require("express");
+const app = express();
+const http = require('http').createServer(app);
+const routes = require("./routes");
 
-function toHtml(fileName, callback) {
-    fs.readFile(fileName, "utf-8", (err, data) => {
-        if (!err) callback(markdown.render(data))
-    });
+routes.setup(app);
+
+start();
+
+function start() {
+    app.set('view engine', 'pug');
+    app.use(express.static('public'));
+    const port = process.env.PORT || 3000;
+    http.listen(port, () => console.log(`Server running on  http://0.0.0.0:${port}`));
 }
-
-server.get('/', (req, res) => {
-    toHtml("markdown/rules-rewrite.md",
-            html => res.render('index', {title: "Règles", rules: html}));
-});
-server.get('/rolesheets', (req, res) => res.render('rolesheets', {title: "Rôles"}));
