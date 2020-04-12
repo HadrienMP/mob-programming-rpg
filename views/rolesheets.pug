@@ -1,1 +1,6 @@
 extends common/layout
+block content
+    each level, index in roles
+        h2 Level #{index + 1}
+        each role in level
+            img(src='/images/' + role + '.png' width="50" height="50")

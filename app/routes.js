@@ -7,7 +7,15 @@ exports.setup = app => {
             html => res.render('index', {title: "Règles", rules: html}));
     });
 
-    app.get('/rolesheets', (req, res) => res.render('rolesheets', {title: "Rôles"}));
+    app.get('/rolesheets', (req, res) => res.render('rolesheets', {
+        title: "Rôles",
+        roles: [
+            ["driver", "navigator", "mobber"],
+            ["researcher", "sponsor", "rear-admiral"],
+            ["archivist", "automationist", "nose"],
+            ["traffic-cop"],
+        ]
+    }));
 }
 
 function toHtml(fileName, callback) {
