@@ -9,11 +9,12 @@ Le mob programming RPG est un jeu de rôle coopératif. Vous devrez incarner des
 * Aucune expérience du mob nécessaire
 
 # Partie
+* La partie dure 1 heure
+* Les tours durent 3 minutes, connectez-vous la salle Mob Time créée à cet effet
 * Vous allez devoir résoudre ensemble, le kata FizzBuzz sur CyberDojo.com
 * Chaque joueur reçoit un numéro qui définit l'ordre de rotation des rôles
     * Tour 1 : Joueur 1 - Navigateur, Joueur 2 - Pilote, Joueur N - Pense bête du navigateur
     * Tour 2 : Joueur 2 - Navigateur, Joueur 3 - Pilote, Joueur 1 - Pense bête du navigateur
-* Les tours durent 3 minutes, connectez-vous la salle Mob Time créée à cet effet.
 * Chaque fin de tour on fait une rétrospective
 * Incarnez vos rôles le mieux possible pour devenir un super mob
 

@@ -11,7 +11,7 @@ function toHtml(fileName, callback) {
 }
 
 app.get('/', (req, res) => {
-    toHtml("markdown/rules.md",
+    toHtml("markdown/rules-rewrite.md",
             html => res.render('index', {title: "Règles", rules: html}));
 });
 app.get('/rolesheets', (req, res) => res.render('rolesheets', {title: "Rôles"}));
