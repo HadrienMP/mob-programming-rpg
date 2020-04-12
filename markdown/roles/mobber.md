@@ -6,7 +6,7 @@ __Côte à côte avec les meilleurs__ votre attitude détendue révèle votre co
 ## Points d'expérience / 3 
 Vous gagnez des points quand vous :
 * Laissez la parole à quelqu'un avec moins de privilège
-* Contribuez une idée
+* Donnez une idée au navigateur
 * Posez des questions jusqu'à ce que vous compreniez
 * Écoutez avec attention
 
