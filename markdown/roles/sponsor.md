@@ -10,4 +10,4 @@ Vous gagnez des points quand vous :
 * Célébrez les moments d'excellence
 
 Ou
-* Quand vous marquez un point d'un rôle niveau 1 que vous avez déjà fini
+* Quand vous marquez un point d'un rôle niveau 2 que vous avez déjà fini
