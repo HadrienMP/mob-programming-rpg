@@ -70,7 +70,3 @@ nav #nav-wrapper ul li a:hover {
   padding: 20px;
   box-sizing: border-box;
 }
-/* line 17, ../sass/main.sass */
-#content h2 {
-  font-size: 0.8em;
-}

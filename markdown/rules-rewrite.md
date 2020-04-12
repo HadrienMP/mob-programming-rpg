@@ -1,3 +1,6 @@
+__by Willem Larsen CC-BY-SA-NC 2016__  
+__Powered by the Apocalypse - thanks to BigBadCon 2016 for inspiration__
+
 Le mob programming RPG est un jeu de rôle coopératif. Vous devrez incarner des rôles et gagner de
  l'expérience dans ce rôle pour faire gagner un badge à l'équipe et monter de niveau. 
 
