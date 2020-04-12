@@ -3,7 +3,7 @@ _"Nous ne sommes pas les premiers à se poser cette question"_
 __Vous suivez les traces de vos prédécesseurs__
 en parcourant les couloirs infinis de la librairie numérique.
 
-## Points d'expérience / 3 
+## Points d'expérience / 4 
 Vous gagnez des points quand vous :
 * Trouvez et partagez une information pertinente de la documentation / d'un blog / ou d'un forum
 

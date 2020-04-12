@@ -3,7 +3,7 @@ _À la recherche des perles rares_
 __Vous savez que l'innovation émane par définition de nos angles morts__ 
 vous recherchez le génie caché des autres.
 
-## Points d'expérience / 3 
+## Points d'expérience / 4
 Vous gagnez des points quand vous :
 * Amplifiez une voix non écoutée
 * Choisissez le mobber avec le moins de privilèges et soutenez leurs idées
