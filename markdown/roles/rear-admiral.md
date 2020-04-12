@@ -5,7 +5,7 @@ __Depuis votre sombre recoin, vous murmurez votre sagesse éprouvée__ aux oreil
 ## Points d'expérience / 4 
 Vous gagnez des points quand vous :
 * murmurez aux oreilles du navigateur
-* Donnez l'indice le plus petit indice possible pour aider le navigateur à avancer
+* Donnez le plus petit indice possible pour aider le navigateur à avancer
 * Donnez des instructions au navigateur au plus haut niveau d'abstraction compréhensible
 
 Ou

@@ -6,7 +6,7 @@ vous recherchez le génie caché des autres.
 ## Points d'expérience / 4
 Vous gagnez des points quand vous :
 * Amplifiez une voix non écoutée
-* Choisissez le mobber avec le moins de privilèges et soutenez leurs idées
+* Choisissez le mobber avec le moins de privilèges et soutenez ses idées
 * Célébrez les moments d'excellence
 
 Ou

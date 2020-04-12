@@ -1,5 +1,5 @@
 # Le chercheur
-_"Nous ne sommes pas les premiers à se poser cette question"_  
+_"Nous ne sommes pas les premiers à nous poser cette question"_  
 __Vous suivez les traces de vos prédécesseurs__
 en parcourant les couloirs infinis de la librairie numérique.
 
