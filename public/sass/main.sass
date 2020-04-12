@@ -18,7 +18,10 @@ a
 .level
   display: inline-block
   margin-bottom: 20px
-  width: 50%
+  @media screen and (max-width: 500px)
+    width: 100%
+  @media screen and (min-width: 500px)
+    width: 50%
   h2
     margin-top: 0
     margin-bottom: 10px

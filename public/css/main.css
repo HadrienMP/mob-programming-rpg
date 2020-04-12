@@ -75,20 +75,31 @@ nav #nav-wrapper ul li a:hover {
 .level {
   display: inline-block;
   margin-bottom: 20px;
-  width: 50%;
 }
-/* line 22, ../sass/main.sass */
+@media screen and (max-width: 500px) {
+  /* line 18, ../sass/main.sass */
+  .level {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 500px) {
+  /* line 18, ../sass/main.sass */
+  .level {
+    width: 50%;
+  }
+}
+/* line 25, ../sass/main.sass */
 .level h2 {
   margin-top: 0;
   margin-bottom: 10px;
 }
 @media screen and (max-width: 500px) {
-  /* line 22, ../sass/main.sass */
+  /* line 25, ../sass/main.sass */
   .level h2 {
     font-size: 1.2em;
   }
 }
-/* line 27, ../sass/main.sass */
+/* line 30, ../sass/main.sass */
 .level .badge {
   width: 30%;
   margin-right: 3%;
