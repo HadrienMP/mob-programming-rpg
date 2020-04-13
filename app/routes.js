@@ -3,6 +3,9 @@ const markdown = require("jstransformer-markdown-it");
 
 exports.setup = app => {
     app.get('/', (req, res) => res.redirect("/rules"));
+
+    app.get('/home', (req, res) => res.render('home'));
+
     app.get('/rules', (req, res) => {
         toHtml("markdown/rules-rewrite.md",
             html => res.render('rules', {title: "Règles", rules: html}));

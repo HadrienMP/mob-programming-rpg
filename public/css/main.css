@@ -63,6 +63,15 @@ nav #nav-wrapper ul li a:hover {
 }
 
 /* line 11, ../sass/main.sass */
+#home {
+  background: url("/images/background.jpg");
+}
+/* line 13, ../sass/main.sass */
+#home h1 {
+  text-align: center;
+}
+
+/* line 16, ../sass/main.sass */
 #content {
   max-width: 800px;
   margin: 60px auto 40px;
@@ -70,51 +79,51 @@ nav #nav-wrapper ul li a:hover {
   padding: 20px;
   box-sizing: border-box;
 }
-/* line 18, ../sass/main.sass */
+/* line 23, ../sass/main.sass */
 #content ul {
   padding-left: 15px;
 }
 @media screen and (min-width: 500px) {
-  /* line 23, ../sass/main.sass */
+  /* line 28, ../sass/main.sass */
   #content #role h1:first-child {
     margin-top: 0;
   }
-  /* line 25, ../sass/main.sass */
+  /* line 30, ../sass/main.sass */
   #content #role .badge {
     float: left;
     margin-right: 20px;
   }
 }
 
-/* line 29, ../sass/main.sass */
+/* line 34, ../sass/main.sass */
 .level {
   display: inline-block;
   margin-bottom: 20px;
 }
 @media screen and (max-width: 500px) {
-  /* line 29, ../sass/main.sass */
+  /* line 34, ../sass/main.sass */
   .level {
     width: 100%;
   }
 }
 @media screen and (min-width: 500px) {
-  /* line 29, ../sass/main.sass */
+  /* line 34, ../sass/main.sass */
   .level {
     width: 50%;
   }
 }
-/* line 36, ../sass/main.sass */
+/* line 41, ../sass/main.sass */
 .level h2 {
   margin-top: 0;
   margin-bottom: 10px;
 }
 @media screen and (max-width: 500px) {
-  /* line 36, ../sass/main.sass */
+  /* line 41, ../sass/main.sass */
   .level h2 {
     font-size: 1.2em;
   }
 }
-/* line 41, ../sass/main.sass */
+/* line 46, ../sass/main.sass */
 .level .badge {
   width: 30%;
   margin-right: 3%;
