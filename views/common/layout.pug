@@ -8,7 +8,7 @@ html
             #nav-wrapper
                 h1 Mob RPG
                 ul
-                    li: a(href="/rules" class=title === "Règles" ? "active": "") Règles
-                    li: a(href="/roles" class=title === "Rôles" ? "active" : "") Rôles
+                    li: a(href=`/${mob}/rules` class=title === "Règles" ? "active": "") Règles
+                    li: a(href=`/${mob}/roles` class=title === "Rôles" ? "active" : "") Rôles
         section#content
             block content
