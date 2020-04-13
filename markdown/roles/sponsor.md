@@ -1,5 +1,5 @@
 # Sponsor
-_À la recherche des perles rares_
+_"À la recherche des perles rares"_  
 __Vous savez que l'innovation émane par définition de nos angles morts__ 
 vous recherchez le génie caché des autres.
 

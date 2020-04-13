@@ -74,36 +74,47 @@ nav #nav-wrapper ul li a:hover {
 #content ul {
   padding-left: 15px;
 }
+@media screen and (min-width: 500px) {
+  /* line 23, ../sass/main.sass */
+  #content #role h1:first-child {
+    margin-top: 0;
+  }
+  /* line 25, ../sass/main.sass */
+  #content #role .badge {
+    float: left;
+    margin-right: 20px;
+  }
+}
 
-/* line 21, ../sass/main.sass */
+/* line 29, ../sass/main.sass */
 .level {
   display: inline-block;
   margin-bottom: 20px;
 }
 @media screen and (max-width: 500px) {
-  /* line 21, ../sass/main.sass */
+  /* line 29, ../sass/main.sass */
   .level {
     width: 100%;
   }
 }
 @media screen and (min-width: 500px) {
-  /* line 21, ../sass/main.sass */
+  /* line 29, ../sass/main.sass */
   .level {
     width: 50%;
   }
 }
-/* line 28, ../sass/main.sass */
+/* line 36, ../sass/main.sass */
 .level h2 {
   margin-top: 0;
   margin-bottom: 10px;
 }
 @media screen and (max-width: 500px) {
-  /* line 28, ../sass/main.sass */
+  /* line 36, ../sass/main.sass */
   .level h2 {
     font-size: 1.2em;
   }
 }
-/* line 33, ../sass/main.sass */
+/* line 41, ../sass/main.sass */
 .level .badge {
   width: 30%;
   margin-right: 3%;
