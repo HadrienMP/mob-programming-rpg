@@ -1,7 +1,14 @@
 html
     head
         title Mob RPG
-        link(href="/css/main.css" rel="stylesheet")
+        link(href="/css/home.css" rel="stylesheet")
         meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet")
     body#home
-        h1 Mob RPG
+        #container
+            img#mobber(src="/images/roles/mobber.png")
+            h1 Mob RPG
+            form(method="post")
+                label(for="mob"): | Quel est votre mob ?
+                input#mob(type="text" maxlength=20 name="mob" placeholder="awesome-mob")
+                button(type="submit"): | Rejoindre

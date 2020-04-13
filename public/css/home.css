@@ -1,4 +1,59 @@
 /* line 1, ../sass/home.sass */
-h1 {
+#home {
+  font-family: sans-serif;
+  background: url("/images/background.jpg");
+}
+/* line 5, ../sass/home.sass */
+#home #container {
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 290px;
   margin: auto;
+  background: white;
+  border-radius: 20px;
+  position: relative;
+  top: 50vh;
+  transform: translateY(-50%);
+  text-align: center;
+  box-shadow: 0 0 30px black;
+}
+/* line 18, ../sass/home.sass */
+#home #container #mobber {
+  display: inline-block;
+  width: 100px;
+}
+/* line 21, ../sass/home.sass */
+#home #container h1 {
+  margin-top: 0;
+  font-family: "Press Start 2P", sans-serif;
+  display: inline-block;
+  margin-left: 10px;
+  width: 140PX;
+  font-size: 2.8em;
+  vertical-align: sub;
+  margin-bottom: 15px;
+}
+/* line 31, ../sass/home.sass */
+#home #container form {
+  text-align: left;
+  margin: 0;
+  padding-top: 15px;
+  border-top: 1px solid #aaa;
+}
+/* line 37, ../sass/home.sass */
+#home #container input {
+  width: 100%;
+  margin: 10px 0 0;
+  border: 1px solid #999;
+  padding: 10px;
+}
+/* line 43, ../sass/home.sass */
+#home #container button {
+  width: 100%;
+  margin: 10px 0 0;
+  border: 1px solid #999;
+  padding: 10px;
+  cursor: pointer;
+  font-family: "Press Start 2P", sans-serif;
+  letter-spacing: -2px;
 }
