@@ -4,10 +4,10 @@ const markdown = require("jstransformer-markdown-it");
 exports.setup = app => {
     app.get('/', (req, res) => {
         toHtml("markdown/rules-rewrite.md",
-            html => res.render('index', {title: "Règles", rules: html}));
+            html => res.render('rules', {title: "Règles", rules: html}));
     });
 
-    app.get('/rolesheets', (req, res) => res.render('rolesheets', {
+    app.get('/roles', (req, res) => res.render('roles', {
         title: "Rôles",
         roles: [
             ["driver", "navigator", "mobber"],
