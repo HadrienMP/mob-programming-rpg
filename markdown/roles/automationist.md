@@ -6,7 +6,7 @@ vous créez d'innombrables robots qui font des corvées un lointain souvenir...
 ## Points d'expérience / 4 
 Vous gagnez des points quand vous :
 * Signalez une tâche répétitive dans un outil,
-* Signalez un aspect répétitif du process de l'équipe,
+* Signalez un aspect répétitif du processus de l'équipe,
 * Signalez du code boiler-plate,
 * Proposez une automatisation pour une tâche répétitive.
 
