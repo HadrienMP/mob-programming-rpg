@@ -3,7 +3,7 @@ const markdown = require("jstransformer-markdown-it");
 const roles = require("./roles");
 
 exports.setup = app => {
-    app.get('/', (req, res) => res.redirect("/main/rules"));
+    app.get('/', (req, res) => res.redirect("/home"));
 
     app.get('/home', (req, res) => res.render('home'));
     app.post('/home', (req, res) => res.redirect(`/${req.body.mob}/rules`));
