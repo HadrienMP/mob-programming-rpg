@@ -6,8 +6,8 @@ __En constante bataille avec les vents du temps qui effacent et obscurcissent__ 
 ## Points d'expérience / 4 
 Vous gagnez des points quand vous :
 * Conservez les solutions alternatives sur un tableau accessible à tous pour qu'elles ne
- soient pas oubliées
-* Exprimez une idée qui prend forme sur un tableau accessible à tous
+ soient pas oubliées,
+* Exprimez une idée qui prend forme sur un tableau accessible à tous,
 * Expliquez la tâche en cours en la rendant visible par tous sur un tableau.
 
 Ou

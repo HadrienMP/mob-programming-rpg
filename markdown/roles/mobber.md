@@ -5,10 +5,10 @@ __Côte à côte avec les meilleurs__ votre attitude détendue révèle votre co
  
 ## Points d'expérience / 3 
 Vous gagnez des points quand vous :
-* Laissez la parole à quelqu'un avec moins de privilège
-* Donnez une idée au navigateur
-* Posez des questions jusqu'à ce que vous compreniez
-* Écoutez avec attention
+* Laissez la parole à quelqu'un avec moins de privilège,
+* Donnez une idée au navigateur,
+* Posez des questions jusqu'à ce que vous compreniez,
+* Écoutez avec attention.
 
 Ou
 * Quand vous marquez un point d'un rôle niveau 1 que vous avez déjà fini
