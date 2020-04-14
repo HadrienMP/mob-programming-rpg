@@ -1,5 +1,5 @@
 # Le nez
-_"Quelque chose est pourri dans l’État de Danemark"_  
+_"Il y a quelque chose de pourri dans l’empire du Danemark"_  
 __Avec la sensibilité d'un sommelier__ vous reniflez les éléments puants et malodorants du code. 
 Rien n'échappe au nez.
  
