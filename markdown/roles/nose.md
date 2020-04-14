@@ -1,11 +1,11 @@
 # Le nez
 _"Quelque chose est pourri dans l’État de Danemark"_  
-__Avec la sensibilité d'un somelier__ vous reniflez les éléments puants et malodorants du code. 
+__Avec la sensibilité d'un sommelier__ vous reniflez les éléments puants et malodorants du code. 
 Rien n'échappe au nez.
  
 ## Points d'expérience / 4 
 Vous gagnez des points quand vous :
-* Signalez un longue ligne de code,
+* Signalez une longue ligne de code,
 * Signalez une condition complexe,
 * Signalez de la duplication,
 * Signalez une variable ou une méthode mal nommée,
