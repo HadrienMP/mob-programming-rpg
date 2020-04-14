@@ -2,8 +2,9 @@
 body
   margin: 0
   font-family: sans-serif
-  background: url("/images/background.jpg") center center no-repeat fixed
-  background-size: cover
+  @media screen and (min-width: 500px)
+    background: url("/images/background.jpg") center center no-repeat fixed
+    background-size: cover
 
 a
   text-decoration: none
@@ -17,6 +18,9 @@ a
   text-align: justify
   padding: 20px
   box-sizing: border-box
+
+  @media screen and (min-width: 500px)
+    margin-top: 90px
 
   ul
     padding-left: 15px

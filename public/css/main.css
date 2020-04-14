@@ -2,11 +2,16 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  background: url("/images/background.jpg") center center no-repeat fixed;
-  background-size: cover;
+}
+@media screen and (min-width: 500px) {
+  /* line 2, ../sass/main.sass */
+  body {
+    background: url("/images/background.jpg") center center no-repeat fixed;
+    background-size: cover;
+  }
 }
 
-/* line 8, ../sass/main.sass */
+/* line 9, ../sass/main.sass */
 a {
   text-decoration: none;
 }
@@ -64,7 +69,7 @@ nav #nav-wrapper ul li a:hover {
   background: #00aaaa;
 }
 
-/* line 13, ../sass/main.sass */
+/* line 14, ../sass/main.sass */
 #content {
   background: white;
   max-width: 800px;
@@ -73,69 +78,75 @@ nav #nav-wrapper ul li a:hover {
   padding: 20px;
   box-sizing: border-box;
 }
-/* line 21, ../sass/main.sass */
+@media screen and (min-width: 500px) {
+  /* line 14, ../sass/main.sass */
+  #content {
+    margin-top: 90px;
+  }
+}
+/* line 25, ../sass/main.sass */
 #content ul {
   padding-left: 15px;
 }
 @media screen and (max-width: 500px) {
-  /* line 25, ../sass/main.sass */
+  /* line 29, ../sass/main.sass */
   #content #role .badge {
     margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 500px) {
-  /* line 29, ../sass/main.sass */
+  /* line 33, ../sass/main.sass */
   #content #role h1:first-child {
     margin-top: 0;
   }
-  /* line 32, ../sass/main.sass */
+  /* line 36, ../sass/main.sass */
   #content #role .badge {
     float: left;
     margin-right: 20px;
   }
 }
 
-/* line 36, ../sass/main.sass */
+/* line 40, ../sass/main.sass */
 .level {
   display: inline-block;
   margin-bottom: 20px;
 }
 @media screen and (max-width: 500px) {
-  /* line 36, ../sass/main.sass */
+  /* line 40, ../sass/main.sass */
   .level {
     width: 100%;
   }
 }
 @media screen and (min-width: 500px) {
-  /* line 36, ../sass/main.sass */
+  /* line 40, ../sass/main.sass */
   .level {
     width: 50%;
   }
 }
-/* line 45, ../sass/main.sass */
+/* line 49, ../sass/main.sass */
 .level h2 {
   margin-top: 0;
   margin-bottom: 10px;
 }
 @media screen and (max-width: 500px) {
-  /* line 45, ../sass/main.sass */
+  /* line 49, ../sass/main.sass */
   .level h2 {
     font-size: 1.2em;
   }
 }
-/* line 51, ../sass/main.sass */
+/* line 55, ../sass/main.sass */
 .level a {
   position: relative;
   display: inline-block;
   width: 30%;
   margin-right: 3%;
 }
-/* line 57, ../sass/main.sass */
+/* line 61, ../sass/main.sass */
 .level a .badge {
   margin-right: 3%;
   width: 100%;
 }
-/* line 61, ../sass/main.sass */
+/* line 65, ../sass/main.sass */
 .level a .count {
   position: absolute;
   background: forestgreen;
