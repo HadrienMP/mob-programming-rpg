@@ -149,7 +149,7 @@ nav #nav-wrapper ul li a:hover {
 /* line 65, ../sass/main.sass */
 .level a .count {
   position: absolute;
-  background: forestgreen;
+  background: #00aaaa;
   color: white;
   border-radius: 21px;
   bottom: -5px;
