@@ -2,9 +2,11 @@
 body {
   margin: 0;
   font-family: sans-serif;
+  background: url("/images/background.jpg") center center no-repeat fixed;
+  background-size: cover;
 }
 
-/* line 6, ../sass/main.sass */
+/* line 8, ../sass/main.sass */
 a {
   text-decoration: none;
 }
@@ -62,77 +64,78 @@ nav #nav-wrapper ul li a:hover {
   background: #00aaaa;
 }
 
-/* line 11, ../sass/main.sass */
+/* line 13, ../sass/main.sass */
 #content {
+  background: white;
   max-width: 800px;
   margin: 60px auto 40px;
   text-align: justify;
   padding: 20px;
   box-sizing: border-box;
 }
-/* line 18, ../sass/main.sass */
+/* line 21, ../sass/main.sass */
 #content ul {
   padding-left: 15px;
 }
 @media screen and (max-width: 500px) {
-  /* line 22, ../sass/main.sass */
+  /* line 25, ../sass/main.sass */
   #content #role .badge {
     margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 500px) {
-  /* line 26, ../sass/main.sass */
+  /* line 29, ../sass/main.sass */
   #content #role h1:first-child {
     margin-top: 0;
   }
-  /* line 29, ../sass/main.sass */
+  /* line 32, ../sass/main.sass */
   #content #role .badge {
     float: left;
     margin-right: 20px;
   }
 }
 
-/* line 33, ../sass/main.sass */
+/* line 36, ../sass/main.sass */
 .level {
   display: inline-block;
   margin-bottom: 20px;
 }
 @media screen and (max-width: 500px) {
-  /* line 33, ../sass/main.sass */
+  /* line 36, ../sass/main.sass */
   .level {
     width: 100%;
   }
 }
 @media screen and (min-width: 500px) {
-  /* line 33, ../sass/main.sass */
+  /* line 36, ../sass/main.sass */
   .level {
     width: 50%;
   }
 }
-/* line 42, ../sass/main.sass */
+/* line 45, ../sass/main.sass */
 .level h2 {
   margin-top: 0;
   margin-bottom: 10px;
 }
 @media screen and (max-width: 500px) {
-  /* line 42, ../sass/main.sass */
+  /* line 45, ../sass/main.sass */
   .level h2 {
     font-size: 1.2em;
   }
 }
-/* line 48, ../sass/main.sass */
+/* line 51, ../sass/main.sass */
 .level a {
   position: relative;
   display: inline-block;
   width: 30%;
   margin-right: 3%;
 }
-/* line 54, ../sass/main.sass */
+/* line 57, ../sass/main.sass */
 .level a .badge {
   margin-right: 3%;
   width: 100%;
 }
-/* line 58, ../sass/main.sass */
+/* line 61, ../sass/main.sass */
 .level a .count {
   position: absolute;
   background: forestgreen;
