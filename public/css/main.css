@@ -74,48 +74,73 @@ nav #nav-wrapper ul li a:hover {
 #content ul {
   padding-left: 15px;
 }
+@media screen and (max-width: 500px) {
+  /* line 22, ../sass/main.sass */
+  #content #role .badge {
+    margin-bottom: 10px;
+  }
+}
 @media screen and (min-width: 500px) {
-  /* line 23, ../sass/main.sass */
+  /* line 26, ../sass/main.sass */
   #content #role h1:first-child {
     margin-top: 0;
   }
-  /* line 25, ../sass/main.sass */
+  /* line 29, ../sass/main.sass */
   #content #role .badge {
     float: left;
     margin-right: 20px;
   }
 }
 
-/* line 29, ../sass/main.sass */
+/* line 33, ../sass/main.sass */
 .level {
   display: inline-block;
   margin-bottom: 20px;
 }
 @media screen and (max-width: 500px) {
-  /* line 29, ../sass/main.sass */
+  /* line 33, ../sass/main.sass */
   .level {
     width: 100%;
   }
 }
 @media screen and (min-width: 500px) {
-  /* line 29, ../sass/main.sass */
+  /* line 33, ../sass/main.sass */
   .level {
     width: 50%;
   }
 }
-/* line 36, ../sass/main.sass */
+/* line 42, ../sass/main.sass */
 .level h2 {
   margin-top: 0;
   margin-bottom: 10px;
 }
 @media screen and (max-width: 500px) {
-  /* line 36, ../sass/main.sass */
+  /* line 42, ../sass/main.sass */
   .level h2 {
     font-size: 1.2em;
   }
 }
-/* line 41, ../sass/main.sass */
-.level .badge {
+/* line 48, ../sass/main.sass */
+.level a {
+  position: relative;
+  display: inline-block;
   width: 30%;
   margin-right: 3%;
+}
+/* line 54, ../sass/main.sass */
+.level a .badge {
+  margin-right: 3%;
+  width: 100%;
+}
+/* line 58, ../sass/main.sass */
+.level a .count {
+  position: absolute;
+  background: forestgreen;
+  color: white;
+  border-radius: 21px;
+  bottom: -5px;
+  right: -5px;
+  padding: 5px;
+  width: 1.1em;
+  text-align: center;
 }

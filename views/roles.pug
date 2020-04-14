@@ -4,4 +4,7 @@ block content
         .level
             h2 Level #{index + 1}
             each role in level
-                a(href=`/${mob}/role/${role}`): img(src=`/images/roles/${role}.png` class="badge")
+                a(href=`/${mob}/role/${role.name}`)
+                    img(src=`/images/roles/${role.name}.png` class="badge")
+                    if role.count !== 0
+                        .count=role.count

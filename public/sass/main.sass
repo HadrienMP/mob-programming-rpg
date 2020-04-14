@@ -18,10 +18,14 @@ a
   ul
     padding-left: 15px
 
+  @media screen and (max-width: 500px)
+    #role .badge
+      margin-bottom: 10px
   @media screen and (min-width: 500px)
     #role
       h1:first-child
         margin-top: 0
+
       .badge
         float: left
         margin-right: 20px
@@ -29,15 +33,35 @@ a
 .level
   display: inline-block
   margin-bottom: 20px
+
   @media screen and (max-width: 500px)
     width: 100%
   @media screen and (min-width: 500px)
     width: 50%
+
   h2
     margin-top: 0
     margin-bottom: 10px
     @media screen and (max-width: 500px)
       font-size: 1.2em
-  .badge
+
+  a
+    position: relative
+    display: inline-block
     width: 30%
     margin-right: 3%
+
+    .badge
+      margin-right: 3%
+      width: 100%
+
+    .count
+      position: absolute
+      background: forestgreen
+      color: white
+      border-radius: 21px
+      bottom: -5px
+      right: -5px
+      padding: 5px
+      width: 1.1em
+      text-align: center
