@@ -1,12 +1,15 @@
 html
     head
         title #{title} - Mob RPG
+
+        link(href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet")
         link(href="/css/main.css" rel="stylesheet")
         meta(name="viewport" content="width=device-width, initial-scale=1")
     body
         nav
             #nav-wrapper
-                h1 Mob RPG
+                h1
+                    a(href=`/`) Mob RPG
                 ul
                     li: a(href=`/${mob}/rules` class=title === "Règles" ? "active": "") Règles
                     li: a(href=`/${mob}/roles` class=title === "Rôles" ? "active" : "") Rôles

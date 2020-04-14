@@ -2,8 +2,9 @@
 #home {
   background: url("/images/background.jpg") center center no-repeat fixed;
   background-size: cover;
+  font-family: sans-serif;
 }
-/* line 5, ../sass/home.sass */
+/* line 6, ../sass/home.sass */
 #home #container {
   padding: 20px;
   box-sizing: border-box;
@@ -17,12 +18,12 @@
   text-align: center;
   box-shadow: 0 0 30px black;
 }
-/* line 18, ../sass/home.sass */
+/* line 19, ../sass/home.sass */
 #home #container #mobber {
   display: inline-block;
   width: 100px;
 }
-/* line 21, ../sass/home.sass */
+/* line 22, ../sass/home.sass */
 #home #container h1 {
   margin-top: 0;
   font-family: "Press Start 2P", sans-serif;
@@ -33,21 +34,21 @@
   vertical-align: sub;
   margin-bottom: 15px;
 }
-/* line 31, ../sass/home.sass */
+/* line 32, ../sass/home.sass */
 #home #container form {
   text-align: left;
   margin: 0;
   padding-top: 15px;
   border-top: 1px solid #aaa;
 }
-/* line 37, ../sass/home.sass */
+/* line 38, ../sass/home.sass */
 #home #container input {
   width: 100%;
   margin: 10px 0 0;
   border: 1px solid #999;
   padding: 10px;
 }
-/* line 43, ../sass/home.sass */
+/* line 44, ../sass/home.sass */
 #home #container button {
   width: 100%;
   margin: 10px 0 0;

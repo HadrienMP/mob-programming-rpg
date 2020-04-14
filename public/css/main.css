@@ -29,42 +29,56 @@ nav {
 nav #nav-wrapper {
   max-width: 800px;
   margin: auto;
-  padding: 0 20px;
   box-sizing: border-box;
+  padding: 0 20px;
 }
-/* line 15, ../sass/_header.sass */
+@media screen and (min-width: 500px) {
+  /* line 9, ../sass/_header.sass */
+  nav #nav-wrapper {
+    padding: 0;
+  }
+}
+/* line 18, ../sass/_header.sass */
 nav #nav-wrapper > * {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 18, ../sass/_header.sass */
+/* line 21, ../sass/_header.sass */
 nav #nav-wrapper h1 {
   margin: 0 20px 0 0;
   font-size: 1.2em;
+  font-family: "Press Start 2P", sans-serif;
+  letter-spacing: -2px;
+  position: relative;
+  top: 1px;
 }
-/* line 22, ../sass/_header.sass */
+/* line 29, ../sass/_header.sass */
+nav #nav-wrapper h1 a {
+  color: white;
+}
+/* line 32, ../sass/_header.sass */
 nav #nav-wrapper ul {
   margin: 0;
   padding: 0;
 }
-/* line 25, ../sass/_header.sass */
+/* line 35, ../sass/_header.sass */
 nav #nav-wrapper ul li {
   display: inline-block;
   list-style-type: none;
 }
-/* line 28, ../sass/_header.sass */
+/* line 39, ../sass/_header.sass */
 nav #nav-wrapper ul li a {
   color: white;
-  padding: 20px;
+  padding: 20px 15px;
   box-sizing: border-box;
   display: block;
 }
-/* line 33, ../sass/_header.sass */
+/* line 44, ../sass/_header.sass */
 nav #nav-wrapper ul li a.active {
   background: #005959;
   font-weight: bold;
 }
-/* line 36, ../sass/_header.sass */
+/* line 47, ../sass/_header.sass */
 nav #nav-wrapper ul li a:hover {
   background: #00aaaa;
 }
