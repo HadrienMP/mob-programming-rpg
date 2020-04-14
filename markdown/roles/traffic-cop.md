@@ -1,7 +1,7 @@
 # L'agent de circulation
-_"Suis le code de la route, tu auras la vie sauve."_  
+_"Suis le Code de la route, tu auras la vie sauve."_  
 __Vous savez que même les meilleurs peuvent faire de stupides erreurs lorsqu'ils sont épuisés,__ 
-c'est pourquoi votre regard expérimenté se porte toujours sur la façon d'y arriver, pas où l'on va.
+c'est pourquoi votre regard expérimenté se porte toujours sur la façon d'y arriver, pas sur l'endroit où l'on va.
  
 ## Points d'expérience / 4 
 Vous gagnez des points quand vous :
