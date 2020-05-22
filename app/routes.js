@@ -27,7 +27,8 @@ exports.setup = app => {
                 return res.render('role', {
                     title: req.params.role,
                     mob: req.params.mob,
-                    description: html
+                    description: html,
+                    "roles": JSON.stringify(roles.get())
                 });
             },
             err => {

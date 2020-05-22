@@ -2,6 +2,10 @@ extends common/layout
 block content
     #role
         img(src='/images/roles/' + title + '.png' class="badge")
-        form(method="post" action=`${title}/win`)
+        form(method="post" id="win" action=`${title}/win`)
             button(type="submit"): | Gagner le badge
         div!= description
+    script.
+        var roleName="#{title}";
+        var emptyRoles=!{roles};
+    script(type="module" src="/js/role-front.js")
