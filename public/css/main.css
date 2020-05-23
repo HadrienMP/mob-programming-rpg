@@ -90,8 +90,9 @@ nav #nav-wrapper ul li a:hover {
   max-width: 800px;
   margin: 60px auto 40px;
   text-align: justify;
-  padding: 20px;
+  padding: 40px 20px 20px;
   box-sizing: border-box;
+  position: relative;
 }
 @media screen and (min-width: 500px) {
   /* line 14, ../sass/main.sass */
@@ -99,69 +100,90 @@ nav #nav-wrapper ul li a:hover {
     margin-top: 90px;
   }
 }
-/* line 25, ../sass/main.sass */
+/* line 26, ../sass/main.sass */
 #content ul {
   padding-left: 15px;
 }
 @media screen and (max-width: 500px) {
-  /* line 29, ../sass/main.sass */
+  /* line 30, ../sass/main.sass */
   #content #role .badge {
     margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 500px) {
-  /* line 33, ../sass/main.sass */
+  /* line 34, ../sass/main.sass */
   #content #role h1:first-child {
     margin-top: 0;
   }
-  /* line 36, ../sass/main.sass */
+  /* line 37, ../sass/main.sass */
   #content #role .badge {
     float: left;
     margin-right: 20px;
   }
 }
-
 /* line 40, ../sass/main.sass */
+#content #xp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  border-bottom: 1px solid;
+  background: #ddd;
+}
+/* line 49, ../sass/main.sass */
+#content #xp .slot {
+  border-left: 1px solid;
+  height: 100%;
+  box-sizing: border-box;
+  display: inline-block;
+}
+/* line 55, ../sass/main.sass */
+#content #xp .slot:first-child {
+  border: 0;
+}
+
+/* line 58, ../sass/main.sass */
 .level {
   display: inline-block;
   margin-bottom: 20px;
 }
 @media screen and (max-width: 500px) {
-  /* line 40, ../sass/main.sass */
+  /* line 58, ../sass/main.sass */
   .level {
     width: 100%;
   }
 }
 @media screen and (min-width: 500px) {
-  /* line 40, ../sass/main.sass */
+  /* line 58, ../sass/main.sass */
   .level {
     width: 50%;
   }
 }
-/* line 49, ../sass/main.sass */
+/* line 67, ../sass/main.sass */
 .level h2 {
   margin-top: 0;
   margin-bottom: 10px;
 }
 @media screen and (max-width: 500px) {
-  /* line 49, ../sass/main.sass */
+  /* line 67, ../sass/main.sass */
   .level h2 {
     font-size: 1.2em;
   }
 }
-/* line 55, ../sass/main.sass */
+/* line 73, ../sass/main.sass */
 .level a {
   position: relative;
   display: inline-block;
   width: 30%;
   margin-right: 3%;
 }
-/* line 61, ../sass/main.sass */
+/* line 79, ../sass/main.sass */
 .level a .badge {
   margin-right: 3%;
   width: 100%;
 }
-/* line 65, ../sass/main.sass */
+/* line 83, ../sass/main.sass */
 .level a .count {
   position: absolute;
   background: #00aaaa;

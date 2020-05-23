@@ -5,6 +5,12 @@ block content
         form(method="post" id="win" action=`${title}/win`)
             button(type="submit"): | Gagner le badge
         div!= description
+        #xp
+            - var i = 0
+            - var w = 100 / 3
+            while i < 3
+                .slot(style="width: " + w + "%")
+                -i++
     script.
         var roleName="#{title}";
         var emptyRoles=!{roles};

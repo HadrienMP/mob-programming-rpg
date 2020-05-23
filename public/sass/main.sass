@@ -16,8 +16,9 @@ a
   max-width: 800px
   margin: 60px auto 40px
   text-align: justify
-  padding: 20px
+  padding: 40px 20px 20px
   box-sizing: border-box
+  position: relative
 
   @media screen and (min-width: 500px)
     margin-top: 90px
@@ -36,6 +37,23 @@ a
       .badge
         float: left
         margin-right: 20px
+  #xp
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    height: 20px
+    border-bottom: 1px solid
+    background: #ddd
+
+    .slot
+      border-left: 1px solid
+      height: 100%
+      box-sizing: border-box
+      display: inline-block
+
+      &:first-child
+        border: 0
 
 .level
   display: inline-block
