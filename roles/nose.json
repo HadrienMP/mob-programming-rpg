@@ -1,0 +1,13 @@
+{
+    "name": "Le nez",
+    "quote": "Il y a quelque chose de pourri dans l’empire du Danemark",
+    "description": "__Avec la sensibilité d'un sommelier__ vous reniflez les éléments puants et malodorants du code. Rien n'échappe au nez.",
+    "behaviours": [
+		"Signalez une longue ligne de code",
+		"Signalez une condition complexe",
+		"Signalez de la duplication",
+		"Signalez une variable ou une méthode mal nommée",
+		"Proposez une action pour nettoyer le code."
+    ]
+}
+ 

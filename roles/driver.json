@@ -1,0 +1,12 @@
+{
+    "name": "Pilote",
+    "quote": "Vroum vroum !",
+    "description": "__Le maître des outils__. Un professionnel silencieux, vous amenez le mob rapidement au travers les étapes : red, green et refactor.",
+    "behaviours": [
+        "Posez une question pour clarifier ce que vous devez taper",
+        "Tapez quelque chose avec laquelle vous êtes en désaccord",
+        "Utilisez un nouveau raccourci clavier",
+        "Apprenez quelque chose sur l'outillage",
+        "Ignorez une instruction directe de quelqu'un qui n'est pas votre navigateur"
+    ]
+}

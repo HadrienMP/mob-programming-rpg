@@ -1,0 +1,9 @@
+{
+    "name": "Le chercheur",
+    "quote": "Nous ne sommes pas les premiers à nous poser cette question",
+    "description": "__Vous suivez les traces de vos prédécesseurs__ en parcourant les couloirs infinis de la librairie numérique.",
+    "behaviours": [
+		"Trouvez et partagez une information pertinente de la documentation / d'un blog / ou d'un forum"
+    ]
+}
+

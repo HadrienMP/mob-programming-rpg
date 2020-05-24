@@ -1,0 +1,10 @@
+{
+    "name": "Le contre amiral",
+    "quote": "",
+    "description": "__Depuis votre sombre recoin, vous murmurez votre sagesse éprouvée__ aux oreilles du navigateur tandis que le mob tente de gagner ses propres lettres de noblesse.",
+    "behaviours": [
+		"Murmurez aux oreilles du navigateur",
+		"Donnez le plus petit indice possible pour aider le navigateur à avancer",
+		"Donnez des instructions au navigateur au plus haut niveau d'abstraction compréhensible"
+    ]
+}

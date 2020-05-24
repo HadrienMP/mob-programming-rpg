@@ -1,0 +1,11 @@
+{
+    "name": "L'automaticien",
+    "quote": "Admirez la puissance de mon armée d'androïdes",
+    "description": "__Augmentant sans relâche la puissance de ce qu'un esprit seul puisse faire,__ vous créez d'innombrables robots qui font des corvées un lointain souvenir...",
+    "behaviours": [
+        "Signalez une tâche répétitive dans un outil",
+        "Signalez un aspect répétitif du processus de l'équipe",
+        "Signalez du code boiler-plate",
+        "Proposez une automatisation pour une tâche répétitive"
+    ]
+}

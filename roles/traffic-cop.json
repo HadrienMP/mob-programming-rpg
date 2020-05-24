@@ -1,0 +1,12 @@
+{
+    "name": "L'agent de circulation",
+    "quote": "Suis le Code de la route, tu auras la vie sauve.",
+    "description": "__Vous savez que même les meilleurs peuvent faire de stupides erreurs lorsqu'ils sont épuisés,__ c'est pourquoi votre regard ebehavioursérimenté est focalisé sur la conduite du mob et pas sur sa destination.",
+    "behaviours": [
+		"Suggérez un nouveau processus pertinent",
+		"Suggérez une nouvelle convention de travail",
+		"Signalez une violation d'un processus ou d'une convention de travail",
+		"Ebehavioursrimez la tâche en cours et la rendez visible à tout le mob",
+		"Tracez les décisions de design et autres détails techniques pour l'équipe"
+    ]
+}
