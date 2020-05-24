@@ -142,48 +142,52 @@ nav #nav-wrapper ul li a:hover {
 #content #xp .slot:first-child {
   border: 0;
 }
+/* line 57, ../sass/main.sass */
+#content #xp .full {
+  background: turquoise;
+}
 
-/* line 58, ../sass/main.sass */
+/* line 60, ../sass/main.sass */
 .level {
   display: inline-block;
   margin-bottom: 20px;
 }
 @media screen and (max-width: 500px) {
-  /* line 58, ../sass/main.sass */
+  /* line 60, ../sass/main.sass */
   .level {
     width: 100%;
   }
 }
 @media screen and (min-width: 500px) {
-  /* line 58, ../sass/main.sass */
+  /* line 60, ../sass/main.sass */
   .level {
     width: 50%;
   }
 }
-/* line 67, ../sass/main.sass */
+/* line 69, ../sass/main.sass */
 .level h2 {
   margin-top: 0;
   margin-bottom: 10px;
 }
 @media screen and (max-width: 500px) {
-  /* line 67, ../sass/main.sass */
+  /* line 69, ../sass/main.sass */
   .level h2 {
     font-size: 1.2em;
   }
 }
-/* line 73, ../sass/main.sass */
+/* line 75, ../sass/main.sass */
 .level a {
   position: relative;
   display: inline-block;
   width: 30%;
   margin-right: 3%;
 }
-/* line 79, ../sass/main.sass */
+/* line 81, ../sass/main.sass */
 .level a .badge {
   margin-right: 3%;
   width: 100%;
 }
-/* line 83, ../sass/main.sass */
+/* line 85, ../sass/main.sass */
 .level a .count {
   position: absolute;
   background: #00aaaa;

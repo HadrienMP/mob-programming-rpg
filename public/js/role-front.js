@@ -18,3 +18,11 @@ function read() {
 function write(roles) {
     localStorage.setItem('roles', JSON.stringify(roles));
 }
+
+const slots = document.getElementsByClassName("slot");
+function displayXP(roles) {
+    let i = 0;
+    while(i < roles[roleName]) {
+        slots[i].classList.add("full");
+    }
+}
