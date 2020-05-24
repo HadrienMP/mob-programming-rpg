@@ -5,7 +5,7 @@ describe("Roles", () => {
     describe("Display", () => {
         it("are grouped by level", () => {
             let roles = displayable("mobName");
-            expect(JSON.stringify(roles)).equal(JSON.stringify(
+            expect(roles).to.deep.equal(
                 [
                     [
                         {"name":"driver","level":1,"count":0,"slots":3},
@@ -26,7 +26,7 @@ describe("Roles", () => {
                         {"name":"traffic-cop","level":4,"count":0,"slots":4}
                     ]
                 ]
-            ));
+            );
         });
     });
 });

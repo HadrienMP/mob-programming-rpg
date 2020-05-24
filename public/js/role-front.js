@@ -1,28 +1,35 @@
-import {behaviourDisplayed} from "./roles.js";
+import {behaviourDisplayed} from "./role.js";
+const slots = document.getElementsByClassName("slot");
 
 let roles = read();
+displayXP(roleName, roles);
 
 const form = document.getElementById("win");
-Array.from(document.getElementsByTagName("li"))
-    .forEach(xp => xp.onclick = () => {
-        roles = behaviourDisplayed(roleName, roles, form.submit);
+const behaviours = document.getElementsByClassName("behaviour");
+
+for (let i = 0; i < behaviours.length; i++) {
+    behaviours[i].addEventListener("click", () => {
+        roles = behaviourDisplayed(roleName, roles, () => form.submit());
+        displayXP(roleName, roles);
         write(roles);
     });
+}
 
 function read() {
-    let jsonRoles = localStorage.getItem('roles');
+    let jsonRoles = sessionStorage.getItem('roles-' + mob);
     if (jsonRoles)
         return JSON.parse(jsonRoles);
     return emptyRoles;
 }
 function write(roles) {
-    localStorage.setItem('roles', JSON.stringify(roles));
+    sessionStorage.setItem('roles-' + mob, JSON.stringify(roles));
 }
 
-const slots = document.getElementsByClassName("slot");
-function displayXP(roles) {
+function displayXP(roleName, roles) {
     let i = 0;
-    while(i < roles[roleName]) {
+    let xp = roles[roleName].xp;
+    while(i < xp) {
         slots[i].classList.add("full");
+        i++;
     }
 }

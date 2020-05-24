@@ -85,6 +85,11 @@ nav #nav-wrapper ul li a:hover {
 }
 
 /* line 14, ../sass/main.sass */
+h1:first-child {
+  margin-top: 0;
+}
+
+/* line 17, ../sass/main.sass */
 #content {
   background: white;
   max-width: 800px;
@@ -93,101 +98,136 @@ nav #nav-wrapper ul li a:hover {
   padding: 40px 20px 20px;
   box-sizing: border-box;
   position: relative;
+  border: 2px solid;
+}
+@media screen and (max-width: 500px) {
+  /* line 17, ../sass/main.sass */
+  #content {
+    border: 0;
+  }
 }
 @media screen and (min-width: 500px) {
-  /* line 14, ../sass/main.sass */
+  /* line 17, ../sass/main.sass */
   #content {
     margin-top: 90px;
   }
 }
-/* line 26, ../sass/main.sass */
+/* line 32, ../sass/main.sass */
 #content ul {
   padding-left: 15px;
 }
 @media screen and (max-width: 500px) {
-  /* line 30, ../sass/main.sass */
+  /* line 36, ../sass/main.sass */
   #content #role .badge {
     margin-bottom: 10px;
+    float: left;
+    width: 100px;
+    margin-right: 20px;
   }
 }
 @media screen and (min-width: 500px) {
-  /* line 34, ../sass/main.sass */
+  /* line 44, ../sass/main.sass */
   #content #role h1:first-child {
     margin-top: 0;
   }
-  /* line 37, ../sass/main.sass */
+  /* line 47, ../sass/main.sass */
   #content #role .badge {
     float: left;
     margin-right: 20px;
   }
 }
-/* line 40, ../sass/main.sass */
+/* line 51, ../sass/main.sass */
+#content #behaviours {
+  margin: 0;
+  padding: 0;
+  clear: both;
+}
+/* line 56, ../sass/main.sass */
+#content #behaviours li {
+  border: 1px solid;
+  border-top: 0;
+  padding: 10px;
+  list-style-type: none;
+  cursor: pointer;
+}
+/* line 62, ../sass/main.sass */
+#content #behaviours li:first-child {
+  border-top: 1px solid;
+}
+/* line 65, ../sass/main.sass */
 #content #xp {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 20px;
-  border-bottom: 1px solid;
+  border-bottom: 2px solid;
   background: #ddd;
 }
-/* line 49, ../sass/main.sass */
+@media screen and (max-width: 500px) {
+  /* line 65, ../sass/main.sass */
+  #content #xp {
+    position: fixed;
+    top: 59px;
+  }
+}
+/* line 77, ../sass/main.sass */
 #content #xp .slot {
-  border-left: 1px solid;
+  border-left: 2px solid;
   height: 100%;
   box-sizing: border-box;
   display: inline-block;
 }
-/* line 55, ../sass/main.sass */
+/* line 83, ../sass/main.sass */
 #content #xp .slot:first-child {
   border: 0;
 }
-/* line 57, ../sass/main.sass */
+/* line 85, ../sass/main.sass */
 #content #xp .full {
-  background: turquoise;
+  background: #00aaaa;
 }
 
-/* line 60, ../sass/main.sass */
+/* line 88, ../sass/main.sass */
 .level {
   display: inline-block;
   margin-bottom: 20px;
 }
 @media screen and (max-width: 500px) {
-  /* line 60, ../sass/main.sass */
+  /* line 88, ../sass/main.sass */
   .level {
     width: 100%;
   }
 }
 @media screen and (min-width: 500px) {
-  /* line 60, ../sass/main.sass */
+  /* line 88, ../sass/main.sass */
   .level {
     width: 50%;
   }
 }
-/* line 69, ../sass/main.sass */
+/* line 97, ../sass/main.sass */
 .level h2 {
   margin-top: 0;
   margin-bottom: 10px;
 }
 @media screen and (max-width: 500px) {
-  /* line 69, ../sass/main.sass */
+  /* line 97, ../sass/main.sass */
   .level h2 {
     font-size: 1.2em;
   }
 }
-/* line 75, ../sass/main.sass */
+/* line 103, ../sass/main.sass */
 .level a {
   position: relative;
   display: inline-block;
   width: 30%;
   margin-right: 3%;
 }
-/* line 81, ../sass/main.sass */
+/* line 109, ../sass/main.sass */
 .level a .badge {
   margin-right: 3%;
   width: 100%;
 }
-/* line 85, ../sass/main.sass */
+/* line 113, ../sass/main.sass */
 .level a .count {
   position: absolute;
   background: #00aaaa;

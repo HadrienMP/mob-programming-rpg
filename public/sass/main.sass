@@ -11,6 +11,9 @@ a
 
 @import "header"
 
+h1:first-child
+  margin-top: 0
+
 #content
   background: white
   max-width: 800px
@@ -19,6 +22,9 @@ a
   padding: 40px 20px 20px
   box-sizing: border-box
   position: relative
+  border: 2px solid
+  @media screen and (max-width: 500px)
+    border: 0
 
   @media screen and (min-width: 500px)
     margin-top: 90px
@@ -29,6 +35,10 @@ a
   @media screen and (max-width: 500px)
     #role .badge
       margin-bottom: 10px
+      float: left
+      width: 100px
+      margin-right: 20px
+
   @media screen and (min-width: 500px)
     #role
       h1:first-child
@@ -37,17 +47,35 @@ a
       .badge
         float: left
         margin-right: 20px
+
+  #behaviours
+    margin: 0
+    padding: 0
+    clear: both
+
+    li
+      border: 1px solid
+      border-top: 0
+      padding: 10px
+      list-style-type: none
+      cursor: pointer
+      &:first-child
+        border-top: 1px solid
+
   #xp
     position: absolute
     top: 0
     left: 0
     right: 0
     height: 20px
-    border-bottom: 1px solid
+    border-bottom: 2px solid
     background: #ddd
+    @media screen and (max-width: 500px)
+      position: fixed
+      top: 59px
 
     .slot
-      border-left: 1px solid
+      border-left: 2px solid
       height: 100%
       box-sizing: border-box
       display: inline-block
@@ -55,7 +83,7 @@ a
       &:first-child
         border: 0
     .full
-      background: turquoise
+      background: #00aaaa
 
 .level
   display: inline-block

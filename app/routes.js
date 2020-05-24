@@ -22,17 +22,20 @@ exports.setup = app => {
     });
 
     app.get('/:mob/role/:role', (req, res) => {
-        toHtml(`markdown/roles/${req.params.role}.md`,
-            html => {
+        read(`roles/${req.params.role}.json`,
+            description => {
+                let role = JSON.parse(description);
                 return res.render('role', {
                     title: req.params.role,
                     mob: req.params.mob,
-                    description: html,
-                    "roles": JSON.stringify(roles.get())
+                    role: role,
+                    description: markdown.render(role.description),
+                    "roles": JSON.stringify(roles.get()),
+                    slots: roles.get()[req.params.role].slots
                 });
             },
             err => {
-                console.log(err);
+                console.error("Cannot read role. " + err);
                 return res.sendStatus(404);
             });
     });
@@ -44,11 +47,19 @@ exports.setup = app => {
 }
 
 function toHtml(fileName, callback, errorCallback) {
-    fs.readFile(fileName, "utf-8", (err, data) => {
+    read(
+        fileName, 
+        data => callback(markdown.render(data)),
+        errorCallback
+    )
+}
+
+function read(filename, callback, errorCallback) {
+    fs.readFile(filename, "utf-8", (err, data) => {
         if (err) {
             errorCallback(err);
         } else {
-            callback(markdown.render(data))
+            callback(data)
         }
     });
 }
