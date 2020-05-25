@@ -1,10 +1,19 @@
 extends common/layout
 block content
-    each level, index in roles
+    each level, index in displayableRoles
         .level
             h2 Level #{index + 1}
             each role in level
                 a(href=`/${mob}/role/${role.name}`)
                     img(src=`/images/roles/${role.name}.png` class="badge")
+                    .slots(data-name=role.name)
+                        .slot
+                        .slot
+                        .slot
                     if role.count !== 0
                         .count=role.count
+
+    script.
+        var mob="#{mob}";
+        var emptyRoles=!{roles};
+    script(src='/js/roles-front.js')

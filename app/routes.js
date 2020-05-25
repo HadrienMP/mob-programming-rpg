@@ -17,7 +17,8 @@ exports.setup = app => {
         return res.render('roles', {
             title: "Rôles",
             mob: req.params.mob,
-            roles: roles.displayable(req.params.mob)
+            "roles": JSON.stringify(roles.get()),
+            "displayableRoles": roles.displayable(req.params.mob)
         });
     });
 
