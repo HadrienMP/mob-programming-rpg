@@ -7,9 +7,8 @@ block content
                 a(href=`/${mob}/role/${role.name}`)
                     img(src=`/images/roles/${role.name}.png` class="badge")
                     .slots(data-name=role.name)
-                        .slot
-                        .slot
-                        .slot
+                        - for (var i=0; i<role.slots; i++)
+                            .slot(style="width: " + 100/role.slots +  "%")
                     if role.count !== 0
                         .count=role.count
 
