@@ -1,4 +1,5 @@
 import {behaviourDisplayed} from "./role.js";
+import {read, write} from "./storage.js";
 const slots = document.getElementsByClassName("slot");
 
 let roles = read();
@@ -13,16 +14,6 @@ for (let i = 0; i < behaviours.length; i++) {
         displayXP(roleName, roles);
         write(roles);
     });
-}
-
-function read() {
-    let jsonRoles = sessionStorage.getItem('roles-' + mob);
-    if (jsonRoles)
-        return JSON.parse(jsonRoles);
-    return emptyRoles;
-}
-function write(roles) {
-    sessionStorage.setItem('roles-' + mob, JSON.stringify(roles));
 }
 
 function displayXP(roleName, roles) {

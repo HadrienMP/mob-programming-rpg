@@ -1,12 +1,4 @@
-function read() {
-    let jsonRoles = sessionStorage.getItem('roles-' + mob);
-    if (jsonRoles)
-        return JSON.parse(jsonRoles);
-    return emptyRoles;
-}
-function write(roles) {
-    sessionStorage.setItem('roles-' + mob, JSON.stringify(roles));
-}
+import {read} from "./storage.js";
 
 function displayXP(roleName, roles, slots) {
     let i = 0;
@@ -18,6 +10,6 @@ function displayXP(roleName, roles, slots) {
 }
 
 const slotsList = document.getElementsByClassName("slots"); 
-for(slots of slotsList) {
+for(let slots of slotsList) {
     displayXP(slots.getAttribute("data-name"), read(), slots.children);
 }
