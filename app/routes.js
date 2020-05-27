@@ -9,7 +9,7 @@ exports.setup = app => {
     app.post('/home', (req, res) => res.redirect(`/${req.body.mob}/rules`));
 
     app.get('/:mob/rules', (req, res) => {
-        toHtml("markdown/rules-rewrite.md",
+        toHtml("data/rules-rewrite.md",
             html => res.render('rules', {title: "Règles", mob: req.params.mob, rules: html}));
     });
 
@@ -23,7 +23,7 @@ exports.setup = app => {
     });
 
     app.get('/:mob/role/:role', (req, res) => {
-        read(`roles/${req.params.role}.json`,
+        read(`data/roles/${req.params.role}.json`,
             description => {
                 let role = JSON.parse(description);
                 return res.render('role', {
